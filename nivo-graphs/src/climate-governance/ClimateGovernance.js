@@ -5,7 +5,7 @@ import climateGovernanceData from './climate-governance-data'
 
 const ClimateGovernance = () => {
 
-    let climateData =  climateGovernanceData.climateGovernanceData.pieData;
+    const climateData =  climateGovernanceData.climateGovernanceData.pieData;
     
     return (
         <ResponsivePie

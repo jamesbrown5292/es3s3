@@ -9,12 +9,12 @@ const ClimateGovernanceBar = () => {
 
   const data = [
     {
-      question: 'Board level oversight',
+      indicator: 'Board level oversight',
       'Oil & Gas': 9,
       'Electric, Utility & Power Generators': 6
     },
     {
-      question: 'Climate-related performance',
+      indicator: 'Climate-related performance',
       'Oil & Gas': 12,
       'Electric, Utility & Power Generators': 9
     }
@@ -25,46 +25,12 @@ const ClimateGovernanceBar = () => {
   <ResponsiveBar
       data={data}
       keys={[ 'Oil & Gas', 'Electric, Utility & Power Generators']}
-      indexBy="question"
+      indexBy="indicator"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
       colors={{ scheme: 'nivo' }}
-      // defs={[
-      //     {
-      //         id: 'dots',
-      //         type: 'patternDots',
-      //         background: 'inherit',
-      //         color: '#38bcb2',
-      //         size: 4,
-      //         padding: 1,
-      //         stagger: true
-      //     },
-      //     {
-      //         id: 'lines',
-      //         type: 'patternLines',
-      //         background: 'inherit',
-      //         color: '#eed312',
-      //         rotation: -45,
-      //         lineWidth: 6,
-      //         spacing: 10
-      //     }
-      // ]}
-      // fill={[
-      //     {
-      //         match: {
-      //             id: 'fries'
-      //         },
-      //         id: 'dots'
-      //     },
-      //     {
-      //         match: {
-      //             id: 'sandwich'
-      //         },
-      //         id: 'lines'
-      //     }
-      // ]}
       borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
       borderRadius={52}
       axisTop={null}

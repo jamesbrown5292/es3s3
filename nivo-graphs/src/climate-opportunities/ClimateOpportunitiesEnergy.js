@@ -4,7 +4,7 @@ import climateOpportunitiesData from './climate-opportunities-data'
 
 const ClimateOpportunitiesEnergy = () => {
 
-  let climateData =  climateOpportunitiesData.climateOpportunitiesData.pieDataEnergy;
+  const climateData =  climateOpportunitiesData.climateOpportunitiesData.pieDataEnergy;
   
   return (
       <ResponsivePie

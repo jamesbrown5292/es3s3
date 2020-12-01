@@ -1,124 +1,73 @@
 import React from 'react';
-import { ResponsivePie } from '@nivo/pie'
+import { ResponsiveBar } from '@nivo/bar'
 import climateOpportunitiesData from './climate-opportunities-data'
 
 const ClimateOpportunities = () => {
 
-  let climateData =  climateOpportunitiesData.climateOpportunitiesData.pieData;
+  const data =  climateOpportunitiesData.climateOpportunitiesData.barDataOil;
   
   return (
-      <ResponsivePie
-          data={climateData}
-          margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-          innerRadius={0.5}
-          padAngle={0.7}
-          cornerRadius={3}
-          colors={{ scheme: 'nivo' }}
-          borderWidth={1}
-          borderColor={{ from: 'color', modifiers: [ [ 'darker', 0.2 ] ] }}
-          radialLabelsSkipAngle={10}
-          radialLabelsTextColor="#333333"
-          radialLabelsLinkColor={{ from: 'color' }}
-          sliceLabelsSkipAngle={10}
-          sliceLabelsTextColor="#333333"
-          defs={[
-              {
-                  id: 'dots',
-                  type: 'patternDots',
-                  background: 'inherit',
-                  color: 'rgba(255, 255, 255, 0.3)',
-                  size: 4,
-                  padding: 1,
-                  stagger: true
-              },
-              {
-                  id: 'lines',
-                  type: 'patternLines',
-                  background: 'inherit',
-                  color: 'rgba(255, 255, 255, 0.3)',
-                  rotation: -45,
-                  lineWidth: 6,
-                  spacing: 10
-              }
-          ]}
-          fill={[
-              {
-                  match: {
-                      id: 'ruby'
-                  },
-                  id: 'dots'
-              },
-              {
-                  match: {
-                      id: 'c'
-                  },
-                  id: 'dots'
-              },
-              {
-                  match: {
-                      id: 'go'
-                  },
-                  id: 'dots'
-              },
-              {
-                  match: {
-                      id: 'python'
-                  },
-                  id: 'dots'
-              },
-              {
-                  match: {
-                      id: 'scala'
-                  },
-                  id: 'lines'
-              },
-              {
-                  match: {
-                      id: 'lisp'
-                  },
-                  id: 'lines'
-              },
-              {
-                  match: {
-                      id: 'elixir'
-                  },
-                  id: 'lines'
-              },
-              {
-                  match: {
-                      id: 'javascript'
-                  },
-                  id: 'lines'
-              }
-          ]}
-          legends={[
-              {
-                  anchor: 'bottom',
-                  direction: 'row',
-                  justify: false,
-                  translateX: 0,
-                  translateY: 56,
-                  itemsSpacing: 0,
-                  itemWidth: 100,
-                  itemHeight: 18,
-                  itemTextColor: '#999',
-                  itemDirection: 'left-to-right',
-                  itemOpacity: 1,
-                  symbolSize: 18,
-                  symbolShape: 'circle',
-                  effects: [
-                      {
-                          on: 'hover',
-                          style: {
-                              itemTextColor: '#000'
-                          }
-                      }
-                  ]
-              }
-          ]}
-      />
-
-  )
+  
+    <ResponsiveBar
+        data={data}
+        keys={[ 'Oil & Gas', 'Electric, Utility & Power Generators']}
+        indexBy="question"
+        margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+        padding={0.3}
+        valueScale={{ type: 'linear' }}
+        indexScale={{ type: 'band', round: true }}
+        colors={{ scheme: 'nivo' }}
+        borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
+        borderRadius={52}
+        axisTop={null}
+        axisRight={null}
+        axisBottom={{
+            tickSize: 6,
+            tickPadding: 10,
+            tickRotation: 0,
+            legend: 'Industry',
+            legendPosition: 'middle',
+            legendOffset: 40
+        }}
+        axisLeft={{
+            tickSize: 10,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: 'Number of companies',
+            legendPosition: 'middle',
+            legendOffset: -40
+        }}
+        labelSkipWidth={12}
+        labelSkipHeight={12}
+        labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
+        legends={[
+            {
+                dataFrom: 'keys',
+                anchor: 'bottom-right',
+                direction: 'column',
+                justify: false,
+                translateX: 50,
+                translateY: 0,
+                itemsSpacing: 12,
+                itemWidth: 100,
+                itemHeight: 60,
+                itemDirection: 'left-to-right',
+                itemOpacity: 0.85,
+                symbolSize: 20,
+                effects: [
+                    {
+                        on: 'hover',
+                        style: {
+                            itemOpacity: 1
+                        }
+                    }
+                ]
+            }
+        ]}
+        animate={true}
+        motionStiffness={90}
+        motionDamping={15}
+    />)
   }
 
 export default ClimateOpportunities

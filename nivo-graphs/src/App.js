@@ -1,4 +1,5 @@
-import ClimateGovernance from './ClimateGovernance'
+import ClimateGovernance from './climate-governance/ClimateGovernance'
+import ClimateGovernanceBar from './climate-governance/ClimateGovernanceBar'
 import './index.css'
 
 function App() {
@@ -6,6 +7,9 @@ function App() {
     <div>
       <h1>Climate Governance Charts</h1>
       <ClimateGovernance />
+      <div>
+        <ClimateGovernanceBar />
+      </div>
     </div>
   );
 }

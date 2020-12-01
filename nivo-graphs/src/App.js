@@ -1,6 +1,7 @@
 import ClimateGovernance from './climate-governance/ClimateGovernance'
 import ClimateGovernanceBar from './climate-governance/ClimateGovernanceBar'
 import ClimateRisksOil from './climate-risks/ClimateRisksOil'
+import ClimateRisksEnergy from './climate-risks/ClimateRisksEnergy'
 import './index.css'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <h3>Oil & Gas</h3>        
         <ClimateRisksOil />
         <h3>Electric, Utility & Energy Producers</h3>        
-        <ClimateRisksOil />
+        <ClimateRisksEnergy />
       </div>
     </div>
   );

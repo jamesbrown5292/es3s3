@@ -6,7 +6,6 @@ const ClimateGovernanceBar = () => {
 
 
   const climateData =  climateGovernanceData.climateGovernanceData.barData;
-  console.log("climdt", climateData)
 
   const data = [
     {

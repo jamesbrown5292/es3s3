@@ -7,8 +7,8 @@ const ClimateRisksEnergy = () => {
   let climateData =  climateRisksData.climateRisksData.pieDataEnergy;
   
   return (
-      <div>
-          <h2>Risks identified as being climate-related - Electric, Utility & Power Generators</h2>
+      <div class="graph-container">
+          <h5>Risks identified as being climate-related - Electric, Utility & Power Generators</h5>
           <ResponsivePie
               data={climateData}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}

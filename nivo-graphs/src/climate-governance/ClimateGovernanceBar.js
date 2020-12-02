@@ -21,8 +21,8 @@ const ClimateGovernanceBar = () => {
     ]
 
   return (
-    <div>
-        <h2>Sector comparison of climate-related governance arrangements</h2>
+    <div class="graph-container">
+        <h5>Sector comparison of climate-related governance arrangements</h5>
         <ResponsiveBar
             data={data}
             keys={[ 'Oil & Gas', 'Electric, Utility & Power Generators']}

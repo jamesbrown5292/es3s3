@@ -8,8 +8,8 @@ const ClimateGovernance = () => {
     const climateData =  climateGovernanceData.climateGovernanceData.pieData;
     
     return (
-        <div>
-            <h2>Sector comparison of climate-related governance arrangements</h2>
+        <div class="graph-container">
+            <h5>Sector comparison of climate-related governance arrangements</h5>
                 <ResponsivePie
                     data={climateData}
                     margin={{ top: 40, right: 80, bottom: 80, left: 80 }}

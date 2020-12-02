@@ -12,7 +12,8 @@ code {
     monospace;
 }
 
-div {
-  height: 500px;
-  max-width: 500px
+.graph-container {
+  height: 30vw;
+  max-width: 30vw;
+  padding: 2em;
 }

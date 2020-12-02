@@ -7,8 +7,8 @@ const ClimateOpportunitiesBySector = () => {
   const data =  climateOpportunitiesData.climateOpportunitiesData.barDataOil;
   
   return (
-    <div>
-        <h2>Do companies identify climate-related opportunities? By sector.</h2>
+    <div class="graph-container">
+        <h5>Do companies identify climate-related opportunities? By sector.</h5>
         <ResponsiveBar
             data={data}
             keys={[ 'Yes', 'No']}

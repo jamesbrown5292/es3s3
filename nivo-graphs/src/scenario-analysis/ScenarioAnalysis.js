@@ -7,8 +7,8 @@ const ScenarioAnalysis = () => {
   let scenarioData =  scenarioAnalysisData.scenarioAnalysisData.pieDataScenarioAnalysis;
   
   return (
-    <div>
-        <h2>Do oil & gas companies use climate-related scenario analysis to inform strategy?</h2>
+    <div class="graph-container">
+        <h5>Do oil & gas companies use climate-related scenario analysis to inform strategy?</h5>
         <ResponsivePie
               data={scenarioData}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}

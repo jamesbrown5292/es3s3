@@ -2,25 +2,25 @@ const climateOpportunitiesData = {
   barDataOil: [
     {
       sector: 'Oil & Gas',
-      'Do idenfity climate opportunities': 3,
-      'Do not idenfity climate opportunities': 15
+      'Yes': 3,
+      'No': 15
     },
     {
       sector: 'Electric, Utility & Power Generators',
-      'Do idenfity climate opportunities': 5,
-      'Do not idenfity climate opportunities': 12
+      'Yes': 5,
+      'No': 12
     }
   ],
   barDataEnergy: [
     {
       sector: 'Oil & Gas',
-      'Do idenfity climate opportunities': 6,
-      'Do not idenfity climate opportunities': 10
+      'Yes': 6,
+      'No': 10
     },
     {
       sector: 'Electric, Utility & Power Generators',
-      'Do idenfity climate opportunities': 4,
-      'Do not idenfity climate opportunities': 12
+      'Yes': 4,
+      'No': 12
     }
   ]
 }

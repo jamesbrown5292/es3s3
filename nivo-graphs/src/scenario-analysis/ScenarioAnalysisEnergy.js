@@ -1,16 +1,16 @@
 import React from 'react';
 import { ResponsivePie } from '@nivo/pie'
-import climateRisksData from './climate-risks-data'
+import scenarioAnalysisData from './scenario-analysis-data'
 
-const ClimateRisksEnergy = () => {
+const ScenarioAnalysis = () => {
 
-  let climateData =  climateRisksData.climateRisksData.pieDataEnergy;
+  let scenarioData =  scenarioAnalysisData.scenarioAnalysisData.pieDataScenarioAnalysis;
   
   return (
-      <div>
-          <h2>Risks identified as being climate-related - Electric, Utility & Power Generators</h2>
-          <ResponsivePie
-              data={climateData}
+    <div>
+        <h2>Do electric, utility and power generating companies use climate-related scenario analysis to inform strategy?</h2>
+        <ResponsivePie
+              data={scenarioData}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
               innerRadius={0.5}
               padAngle={0.7}
@@ -49,9 +49,8 @@ const ClimateRisksEnergy = () => {
                   }
               ]}
           />
-      </div>
-
+    </div>
   )
   }
 
-export default ClimateRisksEnergy
+export default ScenarioAnalysis

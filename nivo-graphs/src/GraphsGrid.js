@@ -9,7 +9,7 @@ import './index.css'
 const GraphsGrid = () => {
   return (
       <Grid>
-        <Grid.Row>
+        <Grid.Row columns={4}>
           <Grid.Column>
             <ClimateGovernanceBar />
           </Grid.Column>

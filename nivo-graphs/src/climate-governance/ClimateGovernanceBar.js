@@ -29,13 +29,14 @@ const ClimateGovernanceBar = () => {
           height={400}
           keys={[ 'Oil & Gas', 'Electric, Utility & Power Generators']}
           indexBy="indicator"
-          margin={{ top: 50, right: 0, bottom: 50, left: 60 }}
+          margin={{ top: 10, right: 0, bottom: 50, left: 60 }}
           padding={0.5}
           valueScale={{ type: 'linear' }}
           indexScale={{ type: 'band', round: true }}
           colors={{ scheme: 'nivo' }}
           borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
           borderRadius={15}
+          enableGridY={false}
           axisTop={null}
           axisRight={null}
           axisBottom={{

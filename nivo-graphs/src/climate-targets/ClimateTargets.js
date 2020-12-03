@@ -7,27 +7,29 @@ const ClimateTargets = () => {
   const climateData =  climateTargetsData.climateTargetsData.barData;
 
   return (
-    <div style={{ width: 500, height: 400}}>
+    <div style={{ width: 800, height: 400, marginTop: '4em'}}>
+        <h5>Companies' publicly disclosed climate targets. Comparison by sector.</h5>
         <ResponsiveBar
             data={climateData}
+            width={650}
             height={400}
-            width={300}
             keys={[ 'Oil & Gas - Yes', 'Oil & Gas - No', 'Electric, Utility, Power - Yes', 'Electric, Utility, Power - No']}
             indexBy="target"
-            margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-            padding={0.3}
+            margin={{ top: 30, right: 0, bottom: 100, left: 60 }}
+            padding={0.6}
             valueScale={{ type: 'linear' }}
             indexScale={{ type: 'band', round: true }}
             colors={{ scheme: 'nivo' }}
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
-            borderRadius={0}
+            borderRadius={10}
+            enableGridY={false}
             axisTop={null}
             axisRight={null}
             axisBottom={{
                 tickSize: 6,
                 tickPadding: 10,
                 tickRotation: 0,
-                legend: 'Industry',
+                legend: 'Targets',
                 legendPosition: 'middle',
                 legendOffset: 40
             }}
@@ -39,18 +41,16 @@ const ClimateTargets = () => {
                 legendPosition: 'middle',
                 legendOffset: -40
             }}
-            labelSkipWidth={12}
-            labelSkipHeight={12}
             labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
             legends={[
                 {
                     dataFrom: 'keys',
-                    anchor: 'bottom-right',
+                    anchor: 'right',
                     direction: 'column',
                     justify: false,
-                    translateX: 50,
-                    translateY: 0,
-                    itemsSpacing: 12,
+                    translateX: 30,
+                    translateY: 50,
+                    itemsSpacing: 0,
                     itemWidth: 100,
                     itemHeight: 60,
                     itemDirection: 'left-to-right',

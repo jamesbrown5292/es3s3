@@ -15,57 +15,59 @@ import './index.css'
 
 const GraphsGrid = (props) => {
     return (
-        <Grid columns='12'>
+        <Grid columns={3}>
           <Grid.Row >
-            <Grid.Column width='4'>
+            <Grid.Column >
               <ClimateGovernanceBar />
             </Grid.Column>
-            <Grid.Column width='4'>
+            <Grid.Column >
               <ClimateRisksEnergy />
             </Grid.Column>
-            <Grid.Column width='4'>
+            <Grid.Column >
               <ClimateRisksOil />
             </Grid.Column>
           </Grid.Row>
 
           <Grid.Row >
-            <Grid.Column width='4'>
+            <Grid.Column >
               <ClimateOpportunitiesBySector />
             </Grid.Column>
-            <Grid.Column width='4'>
+            <Grid.Column >
               <ScenarioAnalysis />
             </Grid.Column>
-            <Grid.Column width='4'>
+            <Grid.Column >
               <ScenarioAnalysisEnergy />
             </Grid.Column>
           </Grid.Row>
 
           <Grid.Row >
-          <Grid.Column width='4'>
+            <Grid.Column >
               <ClimateTargets />
             </Grid.Column>
-            <Grid.Column width='4'>
-              <EmissionsData />
+            <Grid.Column >
             </Grid.Column>
-            <Grid.Column width='4'>
-              <ClimateReporting />
+            <Grid.Column >
+              <EmissionsData />
             </Grid.Column>
           </Grid.Row>
 
           <Grid.Row >
-          <Grid.Column width='6'>
+          <Grid.Column >
+              <ClimateReporting />
+            </Grid.Column>
+          <Grid.Column >
               <CdpScore />
             </Grid.Column>
-            <Grid.Column width='6'>
+            <Grid.Column >
               <TcfdSignatories />
             </Grid.Column>
           </Grid.Row>
 
           <Grid.Row >
-          <Grid.Column width='4'>
+          <Grid.Column >
               <EmissionsData />
             </Grid.Column>
-            <Grid.Column width='4'>
+            <Grid.Column >
               <ClimateReporting />
             </Grid.Column>
           </Grid.Row>

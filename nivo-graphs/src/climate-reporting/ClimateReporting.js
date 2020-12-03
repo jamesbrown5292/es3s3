@@ -7,7 +7,7 @@ const ClimateReporting = () => {
   let climateData =  climateReportingData.climateReportingData;
   
   return (
-    <div style={{ width: 600, height: 400}}>
+    <div className="graph-container page-left" style={{ width: 600, height: 400}}>
         <h5>Companies' climate reporting arrangements</h5>
           <ResponsivePie
               data={climateData}

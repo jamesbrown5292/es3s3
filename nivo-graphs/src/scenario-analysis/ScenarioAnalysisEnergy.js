@@ -7,10 +7,12 @@ const ScenarioAnalysis = () => {
   let scenarioData =  scenarioAnalysisData.scenarioAnalysisData.pieDataScenarioAnalysis;
   
   return (
-    <div class="graph-container">
-        <h5>Do electric, utility and power generating companies use climate-related scenario analysis to inform strategy?</h5>
+    <div style={{ width: '100%', height: 300}}>
+
         <ResponsivePie
               data={scenarioData}
+              height={300}
+              width={600}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
               innerRadius={0.5}
               padAngle={0.7}
@@ -49,7 +51,7 @@ const ScenarioAnalysis = () => {
                   }
               ]}
           />
-    </div>
+        </div>
   )
   }
 

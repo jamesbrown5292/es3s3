@@ -140,6 +140,36 @@ const climateReportingData = {
       "F": 0,
       "FColor": "hsl(165, 70%, 50%)"
     }
+  ],
+  tcfdData: [
+
+    {
+      "id": "Oil & Gas Signatories",
+      "label": "Oil & Gas Signatories",
+      "value": 12,
+      "color": "hsl(300, 70%, 50%)"
+    },
+    {
+      "id": "Oil & Gas Non-Signatories",
+      "label": "Oil & Gas Non-Signatories",
+      "value": 7,
+      "color": "hsl(193, 70%, 50%)"
+    },
+    {
+      "id": "Electric, Utility & Power Generator Signatories",
+      "label": "Electric, Utility & Power Generator Signatories",
+      "value": 12,
+      "color": "hsl(300, 70%, 50%)"
+    },
+    {
+      "id": "Electric, Utility & Power Generator Non-Signatories",
+      "label": "Electric, Utility & Power Generator Non-Signatories",
+      "value": 7,
+      "color": "hsl(193, 70%, 50%)"
+    },
+
+   
+
   ]
 }
 

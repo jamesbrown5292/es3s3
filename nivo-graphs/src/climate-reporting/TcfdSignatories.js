@@ -1,18 +1,18 @@
 import React from 'react';
 import { ResponsivePie } from '@nivo/pie'
-import scenarioAnalysisData from './scenario-analysis-data'
+import climateReportingData from './climate-reporting-data'
 
-const ScenarioAnalysis = () => {
+const TcfdSignatories = () => {
 
-  let scenarioData =  scenarioAnalysisData.scenarioAnalysisData.pieDataScenarioAnalysis;
+  let tcfdData =  climateReportingData.tcfdData;
   
   return (
     <div style={{ width: '100%', height: 300}}>
 
-        <ResponsivePie
-              data={scenarioData}
-              height={300}
-              width={600}
+          <ResponsivePie
+              data={tcfdData}
+              height={400}
+              width={300}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
               innerRadius={0.5}
               padAngle={0.7}
@@ -52,7 +52,8 @@ const ScenarioAnalysis = () => {
               ]}
           />
         </div>
+
   )
   }
 
-export default ScenarioAnalysis
+export default TcfdSignatories

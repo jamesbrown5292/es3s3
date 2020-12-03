@@ -7,10 +7,11 @@ const EmissionsData = () => {
   const data =  emissionsData.emissionsData.barData;
 
   return (
-    <div class="graph-container">
-        <h5>Do companies disclose Scope 3 emissions outsie of CDP?</h5>
+    <div style={{ width: '100%', height: 300}}>
         <ResponsiveBar
             data={data}
+            height={300}
+            width={600}
             keys={[ 'Oil & Gas', 'Electric, Utility, Power']}
             indexBy="response"
             margin={{ top: 50, right: 130, bottom: 50, left: 60 }}

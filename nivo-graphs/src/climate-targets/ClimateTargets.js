@@ -7,10 +7,11 @@ const ClimateTargets = () => {
   const climateData =  climateTargetsData.climateTargetsData.barData;
 
   return (
-    <div class="graph-container">
-        <h5>Sector comparison of climate-related governance arrangements</h5>
+    <div style={{ width: '100%', height: 300}}>
         <ResponsiveBar
             data={climateData}
+            height={400}
+            width={300}
             keys={[ 'Oil & Gas - Yes', 'Oil & Gas - No', 'Electric, Utility, Power - Yes', 'Electric, Utility, Power - No']}
             indexBy="target"
             margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
@@ -19,7 +20,7 @@ const ClimateTargets = () => {
             indexScale={{ type: 'band', round: true }}
             colors={{ scheme: 'nivo' }}
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
-            borderRadius={52}
+            borderRadius={0}
             axisTop={null}
             axisRight={null}
             axisBottom={{

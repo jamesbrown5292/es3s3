@@ -7,10 +7,11 @@ const ClimateOpportunitiesBySector = () => {
   const data =  climateOpportunitiesData.climateOpportunitiesData.barDataOil;
   
   return (
-    <div class="graph-container">
-        <h5>Do companies identify climate-related opportunities? By sector.</h5>
+    <div style={{ width: '100%', height: 300}}>
         <ResponsiveBar
             data={data}
+            height={400}
+            width={300}
             keys={[ 'Yes', 'No']}
             indexBy="sector"
             margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
@@ -19,7 +20,7 @@ const ClimateOpportunitiesBySector = () => {
             indexScale={{ type: 'band', round: true }}
             colors={{ scheme: 'nivo' }}
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
-            borderRadius={52}
+            borderRadius={0}
             axisTop={null}
             axisRight={null}
             axisBottom={{

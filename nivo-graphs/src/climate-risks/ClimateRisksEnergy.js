@@ -7,10 +7,11 @@ const ClimateRisksEnergy = () => {
   let climateData =  climateRisksData.climateRisksData.pieDataEnergy;
   
   return (
-      <div class="graph-container">
-          <h5>Risks identified as being climate-related - Electric, Utility & Power Generators</h5>
-          <ResponsivePie
+    <div style={{ width: '100%', height: 300}}>
+    <ResponsivePie
               data={climateData}
+              height={400}
+              width={300}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
               innerRadius={0.5}
               padAngle={0.7}
@@ -49,7 +50,7 @@ const ClimateRisksEnergy = () => {
                   }
               ]}
           />
-      </div>
+    </div>
 
   )
   }

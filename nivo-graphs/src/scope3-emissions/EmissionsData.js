@@ -19,7 +19,7 @@ const EmissionsData = () => {
             padding={0.4}
             valueScale={{ type: 'linear' }}
             indexScale={{ type: 'band', round: true }}
-            colors={{ scheme: 'nivo' }}
+            colors={{ scheme: 'category10' }}
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
             borderRadius={15}
             enableGridY={false}
@@ -47,7 +47,7 @@ const EmissionsData = () => {
             legends={[
                 {
                     dataFrom: 'keys',
-                    anchor: 'right',
+                    anchor: 'top-right',
                     direction: 'column',
                     justify: false,
                     translateX: 60,

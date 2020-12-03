@@ -19,7 +19,7 @@ const ClimateOpportunitiesBySector = () => {
             padding={0.4}
             valueScale={{ type: 'linear' }}
             indexScale={{ type: 'band', round: true }}
-            colors={{ scheme: 'nivo' }}
+            colors={{ scheme: 'category10' }}
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
             borderRadius={45}
             enableGridY={false}

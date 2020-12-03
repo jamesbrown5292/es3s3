@@ -19,7 +19,7 @@ const ClimateTargets = () => {
             padding={0.6}
             valueScale={{ type: 'linear' }}
             indexScale={{ type: 'band', round: true }}
-            colors={{ scheme: 'nivo' }}
+            colors={{ scheme: 'paired' }}
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
             borderRadius={10}
             enableGridY={false}
@@ -45,7 +45,7 @@ const ClimateTargets = () => {
             legends={[
                 {
                     dataFrom: 'keys',
-                    anchor: 'right',
+                    anchor: 'top-right',
                     direction: 'column',
                     justify: false,
                     translateX: 30,

@@ -16,10 +16,10 @@ const CdpScore = () => {
             keys={[ 'A', 'A-', 'B', 'B-', 'C', 'C-', 'D', 'D-', 'F']}
             indexBy="sector"
             margin={{ top: 50, right: 0, bottom: 50, left: 30 }}
-            padding={0.5}
+            padding={0.6}
             valueScale={{ type: 'linear' }}
             indexScale={{ type: 'band', round: true }}
-            colors={{ scheme: 'nivo' }}
+            colors={{ scheme: 'yellow_orange_red' }}
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
             borderRadius={15}
             enableGridY={false}

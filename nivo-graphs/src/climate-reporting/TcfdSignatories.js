@@ -17,7 +17,7 @@ const TcfdSignatories = () => {
               innerRadius={0.2}
               padAngle={0}
               cornerRadius={3}
-              colors={{ scheme: 'nivo' }}
+              colors={{ scheme: 'paired' }}
               borderWidth={10}
               borderColor={{ from: 'color', modifiers: [ [ 'darker', 0.2 ] ] }}
               radialLabelsSkipAngle={10}

@@ -33,7 +33,7 @@ const ClimateGovernanceBar = () => {
           padding={0.5}
           valueScale={{ type: 'linear' }}
           indexScale={{ type: 'band', round: true }}
-          colors={{ scheme: 'nivo' }}
+          colors={{ scheme: 'category10' }}
           borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
           borderRadius={15}
           enableGridY={false}
@@ -58,30 +58,6 @@ const ClimateGovernanceBar = () => {
           labelSkipWidth={12}
           labelSkipHeight={12}
           labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
-          legends={[
-              {
-                  dataFrom: 'keys',
-                  anchor: 'bottom-right',
-                  direction: 'column',
-                  justify: false,
-                  translateX: 50,
-                  translateY: 0,
-                  itemsSpacing: 12,
-                  itemWidth: 100,
-                  itemHeight: 60,
-                  itemDirection: 'left-to-right',
-                  itemOpacity: 0.85,
-                  symbolSize: 20,
-                  effects: [
-                      {
-                          on: 'hover',
-                          style: {
-                              itemOpacity: 1
-                          }
-                      }
-                  ]
-              }
-          ]}
           animate={true}
           motionStiffness={90}
           motionDamping={15}

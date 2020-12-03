@@ -7,7 +7,7 @@ const ClimateTargets = () => {
   const climateData =  climateTargetsData.climateTargetsData.barData;
 
   return (
-    <div className="graph-container  page-left" style={{ width: 800, height: 400, marginTop: '4em'}}>
+    <div className="graph-container  page-left" style={{ width: 800, height: 450, marginTop: '4em'}}>
         <h5>Companies' publicly disclosed climate targets. Comparison by sector.</h5>
         <ResponsiveBar
             data={climateData}

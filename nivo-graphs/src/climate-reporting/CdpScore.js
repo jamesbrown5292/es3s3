@@ -7,7 +7,7 @@ const CdpScore = () => {
   const data = climateReportingData.cdpScore
 
   return (
-    <div className="graph-container" style={{ width: 500, height: 400, marginLeft: 110}}>
+    <div className="graph-container" style={{ width: 500, height: 450, marginLeft: 110}}>
         <h5>Sector comparison of CDP scores</h5>        
         <ResponsiveBar
             data={data}

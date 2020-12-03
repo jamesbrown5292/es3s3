@@ -1,5 +1,9 @@
 .graph-container:hover {
-  border: solid black 2px;
+  border: solid lightgray 2px;
+}
+
+.graph-container {
+  text-align: center;
 }
 
 .page-left {

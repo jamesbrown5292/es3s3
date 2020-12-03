@@ -7,7 +7,7 @@ const ClimateRisks = () => {
   let climateData =  climateRisksData.climateRisksData.pieData;
   
   return (
-    <div className="graph-container" style={{ width: 400, height: 400}}>
+    <div className="graph-container" style={{ width: 400, height: 450}}>
     <h5>Risks considered to be climate-related - 
         Oil & Gas companies.</h5>
 <ResponsivePie

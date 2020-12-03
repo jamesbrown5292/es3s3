@@ -7,8 +7,8 @@ const TcfdSignatories = () => {
   let tcfdData =  climateReportingData.tcfdData;
   
   return (
-    <div className="graph-container" style={{ width: 500, height: 400}}>
-        <h5>Are companies TCFC signatories? Comparison by sector.</h5>
+    <div className="graph-container" style={{ width: 500, height: 400, marginLeft: '34%'}}>
+        <h5>Are companies TCFD signatories? Comparison by sector.</h5>
           <ResponsivePie
               data={tcfdData}
               height={400}

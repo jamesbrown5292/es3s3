@@ -7,7 +7,7 @@ const ScenarioAnalysis = () => {
   let scenarioData =  scenarioAnalysisData.scenarioAnalysisData.pieDataScenarioAnalysis;
   
   return (
-    <div className="graph-container" style={{ width: 400, height: 400}}>
+    <div className="graph-container" style={{ width: 400, height: 450}}>
         <h5>Do Oil & Gas companies use cilmate-related scenario analsysis to inform strategy?</h5>
         <ResponsivePie
               data={scenarioData}

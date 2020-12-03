@@ -15,6 +15,8 @@ import './index.css'
 
 const GraphsGrid = (props) => {
     return (
+      <div>
+
         <Grid columns={3}>
           <Grid.Row >
             <Grid.Column >
@@ -39,6 +41,9 @@ const GraphsGrid = (props) => {
               <ScenarioAnalysisEnergy />
             </Grid.Column>
           </Grid.Row>
+        </Grid>
+
+        <Grid columns={2}>
 
           <Grid.Row >
             <Grid.Column >
@@ -56,12 +61,16 @@ const GraphsGrid = (props) => {
           <Grid.Column >
               <CdpScore />
             </Grid.Column>
-            <Grid.Column >
-              <TcfdSignatories />
-            </Grid.Column>
           </Grid.Row>
 
         </Grid>
+
+        <Grid>
+          <Grid.Column >
+            <TcfdSignatories />
+          </Grid.Column>
+        </Grid>
+      </div>
     )
 }
 

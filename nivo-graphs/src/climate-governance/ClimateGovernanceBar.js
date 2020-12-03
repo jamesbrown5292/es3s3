@@ -21,7 +21,7 @@ const ClimateGovernanceBar = () => {
     ]
 
   return (
-    <div className="graph-container page-left" style={{ width: 400, height: 400}}>
+    <div className="graph-container page-left" style={{ width: 400, height: 450}}>
       <h5>Climate governance arrangements, by sector</h5>
       <ResponsiveBar
           data={data}

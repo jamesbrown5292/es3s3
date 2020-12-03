@@ -7,7 +7,7 @@ const ClimateOpportunitiesBySector = () => {
   const data =  climateOpportunitiesData.climateOpportunitiesData.barDataOil;
   
   return (
-    <div style={{ width: '100%', height: 300}}>
+    <div style={{ width: 500, height: 400}}>
         <ResponsiveBar
             data={data}
             height={400}

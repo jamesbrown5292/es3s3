@@ -21,38 +21,38 @@ const ClimateGovernanceBar = () => {
     ]
 
   return (
-    <div style={{ width: '100%', height: 300}}>
-
+    <div style={{ width: 400, height: 400}}>
+      <h5>Climate governance arrangements, by sector</h5>
       <ResponsiveBar
           data={data}
-          width={300}
+          width={400}
           height={400}
           keys={[ 'Oil & Gas', 'Electric, Utility & Power Generators']}
           indexBy="indicator"
-          margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-          padding={0.3}
+          margin={{ top: 50, right: 0, bottom: 50, left: 60 }}
+          padding={0.5}
           valueScale={{ type: 'linear' }}
           indexScale={{ type: 'band', round: true }}
           colors={{ scheme: 'nivo' }}
           borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
-          borderRadius={0}
+          borderRadius={15}
           axisTop={null}
           axisRight={null}
           axisBottom={{
-              tickSize: 6,
-              tickPadding: 10,
+              tickSize: 0,
+              tickPadding: 0,
               tickRotation: 0,
-              legend: 'Industry',
+              legend: 'Governance Arrangements',
               legendPosition: 'middle',
-              legendOffset: 40
+              legendOffset: 30
           }}
           axisLeft={{
-              tickSize: 10,
-              tickPadding: 5,
+              tickSize: 0,
+              tickPadding: 0,
               tickRotation: 0,
               legend: 'Number of companies',
               legendPosition: 'middle',
-              legendOffset: -40
+              legendOffset: -30
           }}
           labelSkipWidth={12}
           labelSkipHeight={12}

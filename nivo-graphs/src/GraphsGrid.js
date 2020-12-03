@@ -15,7 +15,7 @@ import './index.css'
 
 const GraphsGrid = (props) => {
     return (
-        <Grid columns='16'>
+        <Grid columns='12'>
           <Grid.Row >
             <Grid.Column width='4'>
               <ClimateGovernanceBar />
@@ -26,10 +26,8 @@ const GraphsGrid = (props) => {
             <Grid.Column width='4'>
               <ClimateRisksOil />
             </Grid.Column>
-            <Grid.Column width='4'>
-              <ClimateRisksOil />
-            </Grid.Column>
           </Grid.Row>
+
           <Grid.Row >
             <Grid.Column width='4'>
               <ClimateOpportunitiesBySector />
@@ -40,22 +38,35 @@ const GraphsGrid = (props) => {
             <Grid.Column width='4'>
               <ScenarioAnalysisEnergy />
             </Grid.Column>
-            <Grid.Column width='4'>
+          </Grid.Row>
+
+          <Grid.Row >
+          <Grid.Column width='4'>
               <ClimateTargets />
             </Grid.Column>
-          </Grid.Row>
-          <Grid.Row >
             <Grid.Column width='4'>
               <EmissionsData />
             </Grid.Column>
             <Grid.Column width='4'>
               <ClimateReporting />
             </Grid.Column>
-            <Grid.Column width='4'>
+          </Grid.Row>
+
+          <Grid.Row >
+          <Grid.Column width='6'>
               <CdpScore />
             </Grid.Column>
-            <Grid.Column width='4'>
+            <Grid.Column width='6'>
               <TcfdSignatories />
+            </Grid.Column>
+          </Grid.Row>
+
+          <Grid.Row >
+          <Grid.Column width='4'>
+              <EmissionsData />
+            </Grid.Column>
+            <Grid.Column width='4'>
+              <ClimateReporting />
             </Grid.Column>
           </Grid.Row>
         </Grid>

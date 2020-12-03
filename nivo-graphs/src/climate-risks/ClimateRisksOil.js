@@ -7,7 +7,7 @@ const ClimateRisks = () => {
   let climateData =  climateRisksData.climateRisksData.pieData;
   
   return (
-    <div style={{ width: '100%', height: 300}}>
+    <div style={{ width: 500, height: 400}}>
 
           <ResponsivePie
               data={climateData}

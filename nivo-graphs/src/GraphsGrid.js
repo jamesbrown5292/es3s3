@@ -45,8 +45,6 @@ const GraphsGrid = (props) => {
               <ClimateTargets />
             </Grid.Column>
             <Grid.Column >
-            </Grid.Column>
-            <Grid.Column >
               <EmissionsData />
             </Grid.Column>
           </Grid.Row>
@@ -63,14 +61,6 @@ const GraphsGrid = (props) => {
             </Grid.Column>
           </Grid.Row>
 
-          <Grid.Row >
-          <Grid.Column >
-              <EmissionsData />
-            </Grid.Column>
-            <Grid.Column >
-              <ClimateReporting />
-            </Grid.Column>
-          </Grid.Row>
         </Grid>
     )
 }

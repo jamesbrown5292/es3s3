@@ -7,11 +7,11 @@ const EmissionsData = () => {
   const data =  emissionsData.emissionsData.barData;
 
   return (
-    <div style={{ width: 600, height: 400, marginLeft: -100, marginTop: 20}}>
+    <div style={{ width: 600, height: 400, marginLeft: 300, marginTop: 30}}>
         <h5>Do companies disclose Scope 3 emissions outside of CDP? By sector.</h5>
         <ResponsiveBar
             data={data}
-            height={400}
+            height={350}
             width={600}
             keys={[ 'Oil & Gas', 'Electric, Utility, Power']}
             indexBy="response"
@@ -21,7 +21,7 @@ const EmissionsData = () => {
             indexScale={{ type: 'band', round: true }}
             colors={{ scheme: 'nivo' }}
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
-            borderRadius={45}
+            borderRadius={15}
             enableGridY={false}
             axisTop={null}
             axisRight={null}
@@ -50,7 +50,7 @@ const EmissionsData = () => {
                     anchor: 'right',
                     direction: 'column',
                     justify: false,
-                    translateX: 50,
+                    translateX: 60,
                     translateY: 0,
                     itemsSpacing: 0,
                     itemWidth: 100,

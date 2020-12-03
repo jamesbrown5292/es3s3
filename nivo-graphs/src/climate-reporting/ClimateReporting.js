@@ -7,49 +7,24 @@ const ClimateReporting = () => {
   let climateData =  climateReportingData.climateReportingData;
   
   return (
-    <div style={{ width: 500, height: 400}}>
-
+    <div style={{ width: 600, height: 400}}>
+        <h5>Companies' climate reporting arrangements</h5>
           <ResponsivePie
               data={climateData}
               height={400}
-              width={300}
-              margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-              innerRadius={0.5}
-              padAngle={0.7}
+              width={600}
+              margin={{ top: -0, right:200, bottom: 0, left: 200 }}
+              innerRadius={0.2}
+              padAngle={0}
               cornerRadius={3}
               colors={{ scheme: 'nivo' }}
-              borderWidth={1}
+              borderWidth={10}
               borderColor={{ from: 'color', modifiers: [ [ 'darker', 0.2 ] ] }}
               radialLabelsSkipAngle={10}
               radialLabelsTextColor="#333333"
               radialLabelsLinkColor={{ from: 'color' }}
-              sliceLabelsSkipAngle={10}
+              sliceLabelsSkipAngle={0}
               sliceLabelsTextColor="#333333"
-              legends={[
-                  {
-                      anchor: 'bottom',
-                      direction: 'row',
-                      justify: false,
-                      translateX: 0,
-                      translateY: 56,
-                      itemsSpacing: 0,
-                      itemWidth: 100,
-                      itemHeight: 18,
-                      itemTextColor: '#999',
-                      itemDirection: 'left-to-right',
-                      itemOpacity: 1,
-                      symbolSize: 18,
-                      symbolShape: 'circle',
-                      effects: [
-                          {
-                              on: 'hover',
-                              style: {
-                                  itemTextColor: '#000'
-                              }
-                          }
-                      ]
-                  }
-              ]}
           />
 
         </div>

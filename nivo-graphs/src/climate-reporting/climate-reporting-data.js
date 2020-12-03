@@ -1,98 +1,98 @@
 const climateReportingData = {
   climateReportingData: [
     {
-      "id": "O&G - Disclosed Using CDP in 2020",
-      "label": "O&G - Disclosed Using CDP in 2020",
+      "id": "O&G - CDP 2020",
+      "label": "O&G - CDP 2020",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "O&G - Didn't disclose CDP in 2020",
-      "label": "O&G - Didn't disclose CDP in 2020",
+      "id": "O&G - No CDP 2020",
+      "label": "O&G - No CDP 2020",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },
     {
-      "id": "EUP - Disclosed Using CDP in 2020",
-      "label": "EUP - Disclosed Using CDP in 2020",
+      "id": "EUP - CDP 2020",
+      "label": "EUP - CDP 2020",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "EUP - Didn't disclose CDP in 2020",
-      "label": "EUP - Didn't disclose CDP in 2020",
+      "id": "EUP - No CDP 2020",
+      "label": "EUP - No CDP 2020",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },
     {
-      "id": "O&G - Sustainability report uses GRI format",
-      "label": "O&G - Sustainability report uses GRI format",
+      "id": "O&G - GRI Standards reporting",
+      "label": "O&G - GRI Standards reporting",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "O&G - Sustainability report does not use GRI format",
-      "label": "O&G - Sustainability report does not use GRI format",
+      "id": "O&G - No GRI standards reporting",
+      "label": "O&G - No GRI standards reporting",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },
     {
-      "id": "EUP - Sustainability report uses GRI format",
-      "label": "EUP - Sustainability report uses GRI format",
+      "id": "EUP - GRI Standards reporting",
+      "label": "EUP - GRI Standards reporting",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "EUP - Sustainability report does not use GRI format",
-      "label": "EUP - Sustainability report does not use GRI format",
+      "id": "EUP - No GRI standards reporting",
+      "label": "EUP - No GRI standards reporting",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },
     {
-      "id": "O&G - Sustainability information disclosed using SASB metrics",
-      "label": "O&G - Sustainability information disclosed using SASB metrics",
+      "id": "O&G - SASB metrics used",
+      "label": "O&G - SASB metrics used",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "O&G - Sustainability information not disclosed using SASB metrics",
-      "label": "O&G - Sustainability information not disclosed using SASB metrics",
+      "id": "O&G - SASB metrics not used",
+      "label": "O&G - SASB metrics not used",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },
     {
-      "id": "EUP - Sustainability information disclosed using SASB metrics",
-      "label": "EUP - Sustainability information disclosed using SASB metrics",
+      "id": "EUP - SASB metrics used",
+      "label": "EUP - SASB metrics used",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "EUP - Sustainability information not disclosed using SASB metrics",
-      "label": "EUP - Sustainability information not disclosed using SASB metrics",
+      "id": "EUP - SASB metrics not used",
+      "label": "EUP - SASB metrics not used",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },
     {
-      "id": "O&G - company uses TCFD approach to disclose climate information",
-      "label": "O&G - company uses TCFD approach to disclose climate information",
+      "id": "O&G - TCFD approach used",
+      "label": "O&G - TCFD approach used",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "O&G - company does not use TCFD approach to disclose climate information",
-      "label": "O&G - company does not use TCFD approach to disclose climate information",
+      "id": "O&G - TCFD approach not used",
+      "label": "O&G - TCFD approach not used",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },
     {
-      "id": "EUP - company uses TCFD approach to disclose climate information",
-      "label": "EUP - company uses TCFD approach to disclose climate information",
+      "id": "EUP - TCFD approach used",
+      "label": "EUP - TCFD approach used",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "EUP - company does not use TCFD approach to disclose climate information",
-      "label": "EUP - company does not use TCFD approach to disclose climate information",
+      "id": "EUP - TCFD approach not used",
+      "label": "EUP - TCFD approach not used",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     }, 
@@ -144,26 +144,26 @@ const climateReportingData = {
   tcfdData: [
 
     {
-      "id": "Oil & Gas Signatories",
-      "label": "Oil & Gas Signatories",
+      "id": "O&G - yes",
+      "label": "O&G - yes",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "Oil & Gas Non-Signatories",
-      "label": "Oil & Gas Non-Signatories",
+      "id": "O&G - no",
+      "label": "O&G - no",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },
     {
-      "id": "Electric, Utility & Power Generator Signatories",
-      "label": "Electric, Utility & Power Generator Signatories",
+      "id": "EUP - yes",
+      "label": "EUP - yes",
       "value": 12,
       "color": "hsl(300, 70%, 50%)"
     },
     {
-      "id": "Electric, Utility & Power Generator Non-Signatories",
-      "label": "Electric, Utility & Power Generator Non-Signatories",
+      "id": "EUP - no",
+      "label": "EUP - no",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
     },

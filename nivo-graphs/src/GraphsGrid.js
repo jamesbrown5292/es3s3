@@ -1,5 +1,6 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { Grid, Image } from 'semantic-ui-react';
+import axios from 'axios'
 import ClimateGovernanceBar from './climate-governance/ClimateGovernanceBar.js'
 import ClimateOpportunitiesBySector from './climate-opportunities/ClimateOpportunitiesBySector.js';
 import CdpScore from './climate-reporting/CdpScore.js';
@@ -14,6 +15,15 @@ import ScenarioAnalysisEnergy from './scenario-analysis/ScenarioAnalysisEnergy.j
 import './index.css'
 
 const GraphsGrid = (props) => {
+
+  const governanceRawData = useEffect(() => {
+    Promise.all([
+      axios.get('https://scope-emission.s3.amazonaws.com/Scope_Emission.json'),
+    ]).then((all) => {
+      console.log(all);
+    });
+  }, []);
+
     return (
       <div>
 

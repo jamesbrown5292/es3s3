@@ -92,8 +92,8 @@ const ClimateGovernanceBar = () => {
     };
   }
 
-  const testData = buildChart()
-  console.log(testData)
+  const APIdata = buildChart()
+
 
   const data = [
     {
@@ -107,12 +107,12 @@ const ClimateGovernanceBar = () => {
       'Electric, Utility & Power Generators': 9
     }
     ]
-  if (testData) {
+  if (APIdata) {
     return (
       <div className="graph-container page-left" style={{ width: 400, height: 450}}>
         <h5>Climate governance arrangements, by sector</h5>
         <ResponsiveBar
-            data={testData}
+            data={APIdata}
             width={400}
             height={400}
             keys={[ 'Oil & Gas', 'Electric, Utility & Power Generators']}

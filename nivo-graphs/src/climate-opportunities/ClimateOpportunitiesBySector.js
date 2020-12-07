@@ -67,7 +67,7 @@ const ClimateOpportunitiesBySector = () => {
 
     const data =  climateOpportunitiesData.climateOpportunitiesData.barDataOil;
       if (APIdata) {
-          {console.log("API data is ", APIdata)}
+
         return (
             <div className="graph-container  page-left" style={{ width: 400, height: 450}}>
                 <h5>Do companies identify climate-related opportunities? Comparison by sector.</h5>

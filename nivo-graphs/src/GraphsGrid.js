@@ -39,9 +39,6 @@ const GraphsGrid = (props) => {
             <Grid.Column >
               <ScenarioAnalysis />
             </Grid.Column>
-            <Grid.Column >
-              <ScenarioAnalysisEnergy />
-            </Grid.Column>
           </Grid.Row>
         </Grid>
 

@@ -74,8 +74,6 @@ const TcfdSignatories = () => {
 
   const APIdata = buildChart()
 
-  
-  let tcfdData =  climateReportingData.tcfdData;
   if (APIdata) {
     return (
       <div className="graph-container" style={{ width: 500, height: 400, marginLeft: '34%'}}>

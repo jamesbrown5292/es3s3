@@ -4,7 +4,7 @@ import climateReportingData from './climate-reporting-data'
 import axios from 'axios';
 import chartHelpers from "../data-helpers/chartHelpers.js"
 
-const ClimateReporting = () => {
+const ClimateReportingEnergy = () => {
   const [state, setState] = useState({});
 
   useEffect(() => {
@@ -30,42 +30,42 @@ const ClimateReporting = () => {
           columnHeadersLookup['cdp2020'],
           'Yes',
           state.ResultSet.Rows,
-          columnHeadersLookup['industry'], 'Oil & Gas')
+    columnHeadersLookup['industry'], 'Electric Utility & Power Generators')
       const oilGasCdpNo = chartHelpers.countResponsesByFilter(
           columnHeadersLookup['cdp2020'],
           'No',
           state.ResultSet.Rows,
-          columnHeadersLookup['industry'], 'Oil & Gas')
+    columnHeadersLookup['industry'], 'Electric Utility & Power Generators')
       const oilGasSriYes = chartHelpers.countResponsesByFilter(
           columnHeadersLookup['sustainability_SRI'],
           'Yes',
           state.ResultSet.Rows,
-          columnHeadersLookup['industry'], 'Oil & Gas')
+    columnHeadersLookup['industry'], 'Electric Utility & Power Generators')
       const oilGasSriNo = chartHelpers.countResponsesByFilter(
           columnHeadersLookup['sustainability_SRI'],
           'No',
           state.ResultSet.Rows,
-          columnHeadersLookup['industry'], 'Oil & Gas')
+    columnHeadersLookup['industry'], 'Electric Utility & Power Generators')
       const oilGasSasbYes = chartHelpers.countResponsesByFilter(
           columnHeadersLookup['SASB_metrics'],
           'Yes',
           state.ResultSet.Rows,
-          columnHeadersLookup['industry'], 'Oil & Gas')
+    columnHeadersLookup['industry'], 'Electric Utility & Power Generators')
       const oilGasSasbNo= chartHelpers.countResponsesByFilter(
           columnHeadersLookup['SASB_metrics'],
           'No',
           state.ResultSet.Rows,
-          columnHeadersLookup['industry'], 'Oil & Gas')
+    columnHeadersLookup['industry'], 'Electric Utility & Power Generators')
       const oilGasTcfdYes = chartHelpers.countResponsesByFilter(
           columnHeadersLookup['tcfd_used'],
           'Yes',
           state.ResultSet.Rows,
-          columnHeadersLookup['industry'], 'Oil & Gas')
+    columnHeadersLookup['industry'], 'Electric Utility & Power Generators')
       const oilGasTcfdNo= chartHelpers.countResponsesByFilter(
           columnHeadersLookup['tcfd_used'],
           'No',
           state.ResultSet.Rows,
-          columnHeadersLookup['industry'], 'Oil & Gas')
+    columnHeadersLookup['industry'], 'Electric Utility & Power Generators')
       
 
       return [
@@ -126,7 +126,7 @@ const ClimateReporting = () => {
   if (APIdata) {
     return (
       <div className="graph-container page-left" style={{ width: 700, height: 450}}>
-          <h5>Oil & Gas companies' climate reporting arrangements</h5>
+    <h5>Electric Utility  Power Generators' climate reporting arrangements</h5>
             <ResponsivePie
                 data={APIdata}
                 height={400}
@@ -151,4 +151,4 @@ const ClimateReporting = () => {
   } return null;
   }
 
-export default ClimateReporting
+export default ClimateReportingEnergy

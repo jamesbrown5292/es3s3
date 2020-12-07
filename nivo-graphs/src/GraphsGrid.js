@@ -13,6 +13,7 @@ import EmissionsData from './scope3-emissions/EmissionsData.js';
 import ScenarioAnalysis from './scenario-analysis/ScenarioAnalysis.js';
 import ScenarioAnalysisEnergy from './scenario-analysis/ScenarioAnalysisEnergy.js';
 import './index.css'
+import ClimateReportingEnergy from './climate-reporting/ClimateReportingEnergy.js';
 
 const GraphsGrid = (props) => {
 
@@ -58,16 +59,21 @@ const GraphsGrid = (props) => {
               <ClimateReporting />
             </Grid.Column>
           <Grid.Column >
-              <CdpScore />
-            </Grid.Column>
+              <ClimateReportingEnergy />
+          </Grid.Column>
           </Grid.Row>
 
         </Grid>
 
-        <Grid>
-          <Grid.Column >
-            <TcfdSignatories />
-          </Grid.Column>
+        <Grid columns={2}>
+          <Grid.Row >
+            <Grid.Column >
+              <CdpScore />
+            </Grid.Column>
+            <Grid.Column >
+              <TcfdSignatories />
+            </Grid.Column>
+          </Grid.Row>
         </Grid>
       </div>
     )

@@ -1,8 +1,7 @@
 import { ResponsiveBar } from '@nivo/bar'
-import climateGovernanceData from './climate-governance-data'
 import { React, useEffect, useState } from 'react';
 import axios from 'axios';
-import chartHelpers, { countResponsesByFilter } from "../data-helpers/chartHelpers.js"
+import chartHelpers from "../data-helpers/chartHelpers.js"
 
 
 const ClimateGovernanceBar = () => {

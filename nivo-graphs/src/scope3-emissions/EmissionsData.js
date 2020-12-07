@@ -23,7 +23,7 @@ const EmissionsData = () => {
         scope3_emissions: "1_does_the_company_disclose_scope_3_emissions_outside_of_cdp"
     };
 
-      const buildChart = () => {
+    const buildChart = () => {
         if (state.ResultSet) {
             const oilGasScope3Yes = chartHelpers.countResponsesByFilter(
                 columnHeadersLookup['scope3_emissions'],

@@ -16,16 +16,6 @@ import './index.css'
 
 const GraphsGrid = (props) => {
 
-  const governanceRawData = useEffect(() => {
-    Promise.all([
-      axios.get('https://aypjnigcug.execute-api.us-east-1.amazonaws.com/prod'),
-    ]).then((all) => {
-      console.log("axiosreq", all);
-    });
-  }, []);
-
-
-
     return (
       <div>
 

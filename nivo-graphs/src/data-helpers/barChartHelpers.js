@@ -2,17 +2,41 @@ const _ = require('lodash')
 
 const DataHelpers = {
 
-  //Method to count up all 'response' fields (e.g. yes/no) given a 'columnHeader', returns the count
-  countValues (columnHeader, response, dataArray) {
+  //Method to count up all 'response' fields (e.g. yes/no) given a 'column', returns the count
+  // countValues (columnHeader, response, dataArray) {
 
-    return dataArray.reduce(((acc, curr) => {
-      if (curr[columnHeader] === response) {
-        acc++;
-      }
-      return acc;
-    }), 0)
+  //   return dataArray.reduce(((acc, curr) => {
+  //     if (curr[columnHeader] === response) {
+  //       acc++;
+  //     }
+  //     return acc;
+  //   }), 0)
 
+  // },
+
+  // Get the column index given a column header
+  getColumnIndex (column, data) {
+    for (let i = 0; i < data[0].Data.length; i++){
+        if (data[0].Data[i].VarCharValue === column) {
+          return i
+        }
+    }
   },
+
+  // Count up all the 'response' fields given a column
+  countResponses (column, response, data) {
+    const columnIndex = this.getColumnIndex(column, data);
+    let rows = data.slice(1);
+    let count = 0;
+    for (let k = 0; k < rows.length; k++){
+      if (rows[k].Data[columnIndex].VarCharValue == response) {
+        count++;
+      };
+    };
+    return count
+  },
+
+
 
   //Method that takes in the raw data, an xValues array of strings to be displayed along the x-axis
   //and a keysObject. The keys object takes as keys the names of the labels you want to give to the data, the values correspond 
@@ -21,7 +45,6 @@ const DataHelpers = {
     const retArr = [];
     Object.keys(lookupObject).map(label => {
       retArr.push({xValue: label});
-      console.log("retArr", retArr)
     });
 
 
@@ -33,7 +56,7 @@ const DataHelpers = {
         }
         
         const formattedLabel = getKeyByValue(lookupObject, unformattedLabel)
-        rowObject[formattedLabel] = this.countValues(unformattedLabel, response, rawData)
+        rowObject[formattedLabel] = this.countResponses(unformattedLabel, response, rawData)
       })
     })
     return retArr;
@@ -49,7 +72,7 @@ const DataHelpers = {
       const retObj = {
         id: key,
         label: key,
-        value: this.countValues((lookupObject[key]), response, data)
+        value: this.countResponses((lookupObject[key]), response, data)
       };
       const objCopy = _.cloneDeep(retObj);
       retArr.push(objCopy);
@@ -59,15 +82,14 @@ const DataHelpers = {
 };
 
 
+let refsObj = {
+"Yes": "1_does_the_company_clearly_identify_board_level_oversight_existing_on_climate_related_issues",
+"No": "1_does_the_company_clearly_identify_board_level_oversight_existing_on_climate_related_issues"
+};
 
 
 //////////// TEST DATA /////////////////
 
-  
-let refsObj = {
-  "Yes": "unformatted_column_header_X",
-  "No": "unformatted_column_header_Y"
-};
 
 let searchResponse = 'yes';
 
@@ -695,7 +717,6 @@ const countResponses = (column, response, data) => {
   let count = 0;
   
   for (let k = 0; k < rows.length; k++){
-    console.log("colindex", rows[k].Data[columnIndex].VarCharValue)
     // eslint-disable-next-line eqeqeq
     if (rows[k].Data[columnIndex].VarCharValue == response) {
       count++;
@@ -704,7 +725,5 @@ const countResponses = (column, response, data) => {
   return count
   
 }
-/* */
 
-// console.log(getColumnIndex(columnHeadersLookup['board_level_oversight'], workingData))
-console.log(countResponses(columnHeadersLookup['board_level_oversight'], "Yes", workingData))
+console.log(DataHelpers.produceBarData(refsObj, 'Yes', workingData))

@@ -166,10 +166,7 @@ const climateReportingData = {
       "label": "EUP - no",
       "value": 7,
       "color": "hsl(193, 70%, 50%)"
-    },
-
-   
-
+    }
   ]
 }
 

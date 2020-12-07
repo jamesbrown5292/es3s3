@@ -15,7 +15,6 @@ const EmissionsData = () => {
       }, []);
     
 
-    const data =  emissionsData.emissionsData.barData;
 
     const columnHeadersLookup = {
         company: "company",
